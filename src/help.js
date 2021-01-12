@@ -1,136 +1,183 @@
 const help = (prefix) => {
 	return `
-<═══════════════════════>
-                      ᏴϴͲ ᎠႮ ᏦᎬᏦᎬ
- <═══════════════════════>
+<══════════════════════>
+      ᏴϴͲ ᎠႮ ᏦᎬᏦᎬ ᎪᏢᎡᏆᎷϴᎡᎪᎠϴ
+ <══════════════════════>
 
-             ╲    ╱    ● ᏴϴͲ●ᎷᎬΝႮ●
-       ╱▔▔▔▔▔╲       Author    : ՏᎡ.ᏦᎬᏦᎬ
-      ┃┈▇┈┈▇┈┃      
-╭╮┣━━━━━━┫╭╮    
-┃┃┃┈┈┈┈┈┈┃┃┃    
-╰╯┃┈┈┈┈┈┈┃╰╯
-      ╰┓┏━━┓┏╯
-         ╰╯      ╰╯
+__█████████  ● ᏴϴͲ●ᎷᎬΝႮ●         
+__█▄█████▄█   Author    : ՏᎡ.ᏦᎬᏦᎬ
+__█▼▼▼▼▼█ 
+_██ᏴϴͲ Ꮩ1.2██▌ 
+__█▲▲▲▲▲█ 
+__█████████ 
+____██_____██
 
- ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
- 
- ▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-╔═════════════════════════╗
- ●─────────●MENU●──────────●
-╚═════════════════════════╝
-
+┌─────────❶.❷────────┐
+└─────────❶.❷────────┘
 ╔══════════════════════
 ║ ᏟϴᎷᎪΝᎠϴՏ ᏞᏆՏͲᎪᎠϴՏ
 ╠══════════════════════
 ║   ᎬХᏟᏞႮՏᏆᏙϴ ᏢᎪᎡᎪ ᎪᎠᎷ'Տ
 ║╭─────────────────────
-║├────> ${prefix}kick @menciona o membro
-║├> banir membro 
+║├> ${prefix}welcome [0/1]
+║├> ${prefix}bv [0/1]
+║├> ${prefix}bemvindo [0/1]
+║├> ${prefix}boasvindas [0/1]
+║├────> desativar/ativa bv
 ║├─────────────────────
-║├> ${prefix}add +55xxxxxxxxx
+║├> ${prefix}add 55xxx
+║├> ${prefix}adicionar 55xxx
 ║├────> add menbro
 ║├─────────────────────
-║├> ${prefix}listadmin
-║├────> listar cm todos ADM's
+║├> ${prefix}kick @membro
+║├> ${prefix}ban @membro
+║├> ${prefix}remover @membro
+║├────> remover membro
 ║├─────────────────────
-║├> ${prefix}welcome [1/0]
-║├────> ativar/desativar boas vindas
-║├─────────────────────
-║├> ${prefix}group tutup
-║├────> fecha grupo 
-║├─────────────────────
-║├> ${prefix}group buka
-║├────> abrir grupo 
-║├─────────────────────
-║├> ${prefix}demote @marca adm
-║├────> retirar ADM de alguém
-║├─────────────────────
-║├> ${prefix}promote @marca membro
+║├> ${prefix}promote @membro
+║├> ${prefix}promover @membro
 ║├────> promover a ADM
 ║├─────────────────────
-║├> ${prefix}nsfw [1/0]
-║├────> ativa/desativar modo loli
+║├> ${prefix}demote @adm
+║├> ${prefix}promover @adm
+║├────> rebaixar a membro
 ║├─────────────────────
-║├> ${prefix}simih [1/0]
-║├────>  ??? Sla pra q serve 
-║└─────────────────────
-╠══════════════════════
-║   ᎷᏆᎠᏆᎪ Ꮖ ՏͲᏆᏟᏦᎬᎡ
-║╭─────────────────────
-║├> ${prefix}sticker + foto/Gif
-║├────> fazer figurinha
+║├> ${prefix}grup abrir/fechar
+║├> ${prefix}group abrir/fechar
+║├> ${prefix}grupo abrir/fechar
+║├────> bem específico ;-;
 ║├─────────────────────
-║├> ${prefix}anjing
-║├────> dog aleatório fofinho
+║├> ${prefix}setname seu txt
+║├> ${prefix}mudarnome seu txt
+║├────> troca nome do grupo
 ║├─────────────────────
-║├> ${prefix}text3d seu txt
-║├────> uma foto cm seu txt
+║├> ${prefix}setdesc seu txt
+║├> ${prefix}mudardesc seu txt
+║├────> troca descrição
 ║├─────────────────────
-║├> ${prefix}pokemon
-║├────> um pokemon aleatório
+║├> ${prefix}mudarfoto
+║├────> mudar foto do grupo
 ║├─────────────────────
-║├> ${prefix}ocr (marque uma foto)
-║├────> pegar txts de uma foto
+║├> ${prefix}marcar
+║├────> marcação
 ║├─────────────────────
-║├> ${prefix}tts pt seu txt
-║├────> transformar txt em áudio
+║├> ${prefix}marcar2
+║├────> marcação 2
 ║├─────────────────────
-║├> ${prefix}toimg (marca uma fig)
-║├────> converter fig em foto
+║├> ${prefix}marcar3
+║├────> marcação
 ║├─────────────────────
-║├> ${prefix}ytmp4 (link de algum vídeo)
-║├────> pega informações de vídeo
+║├> ᎠϴᏔΝᏞϴᎪᎠ/ᏞᏆΝᏦ
 ║├─────────────────────
-║├> ${prefix}hilih seu txt
-║├────> converter todas vogais do
-║│ txt para "i"
-║├─────────────────────
-║├> ${prefix}quotes
-║├────> txt de motivação (indo)
-║├─────────────────────
-║├> ${prefix}map 00000-000
-║├────> pega imagem do local
-║│desejado 
-║├─────────────────────
-║├> ${prefix}nsfwloli
-║├────> foto de loli
-║├─────────────────────
-║├> ${prefix}loli
-║├────> foto de loli
+║├> ${prefix}tiktokstalk Nick da conta
+║├────> stalk de tiktok
 ║├─────────────────────
 ║├> ${prefix}fototiktok
-║├────> ??? Sla
+║├────> foto do tiktok
 ║├─────────────────────
-║├> ${prefix}phlogo seu|txt
-║├────> logo do porn hub cm seu txt
+║├> ${prefix}ytmp4 link
+║├> ${prefix}ytvideo link
+║├> ${prefix}ytbuscar link
+║├> ${prefix}ytbaixa link
+║├────> baixa vídeo do YouTube
 ║├─────────────────────
-║├> ${prefix}tiktokstalk
-║├────> ?? Não sei como funciona
-║└─────────────────────
-╠══════════════════════
-║   ᏟϴᎷᎪΝᎠϴՏ ᏢᎪᎡᎪ ϴ ᏟᎡᏆᎪᎠϴᎡ
-║╭─────────────────────
+║├>ᎷᏆᎠᏆᎪ/ϴႮͲᎡϴՏ
+║├─────────────────────
+║├> ${prefix}sticker
+║├> ${prefix}stiker
+║├> ${prefix}fig
+║├> ${prefix}figurinha
+║├────> fazer fig cm foto/gif
+║├─────────────────────
+║├> ${prefix}tts seu txt
+║├> ${prefix}gtts seu txt
+║├> ${prefix}audio seu txt
+║├────> converter txt em áudio
+║├─────────────────────
+║├> ${prefix}toimg marca fig
+║├> ${prefix}converter marca fig
+║├────> converter fig em foto
+║├─────────────────────
+║├> ${prefix}txtdafoto
+║├> ${prefix}ocr
+║├────> pega txt de foto
+║├─────────────────────
+║├> ${prefix}wait marca foto
+║├> ${prefix}pesquisar marca foto
+║├────> pesquisa por anime de ft
+║├─────────────────────
+║├> ${prefix}listaadms
+║├> ${prefix}listadmins
+║├> ${prefix}adms
+║├────> lista dos adms
+║├─────────────────────
+║├> ${prefix}cachorro
+║├> ${prefix}auau
+║├> ${prefix}dog
+║├────> dog fofo aleatório
+║├─────────────────────
+║├> ${prefix}pokemon
+║├────> pokemon aleatório
+║├─────────────────────
+║├> ${prefix}logo3d seu txt
+║├────> logo cm seu texto
+║├─────────────────────
+║├> ${prefix}logoph seu|txt
+║├────> logo cm seu texto
+║├─────────────────────
+║├> ${prefix}info
+║├────> informações do bot
+║├─────────────────────
+║├> ${prefix}listabloq
+║├────> números bloqueados
+║├─────────────────────
+║├> ${prefix}lofi
+║├────> foto única de lofi
+║├─────────────────────
+║├> ${prefix}map 0000-0000 
+║├> ${prefix} ${prefix}mapa 0000-0000 
+║├────> pega foto do local
+║├─────────────────────
+║├>ᏟϴᎷᎪΝᎠϴՏ Ꭰϴ ᏟᎡᏆᎪᎠϴᎡ
+║├─────────────────────
+║├> ${prefix}hidetag
+║├────> esconde tag
+║├─────────────────────
 ║├> ${prefix}clearall
-║├────> sla
+║├> ${prefix}limpar
+║├────> limpa zap do bot
 ║├─────────────────────
-║├> ${prefix}block
-║├────> BLOQ em membro
+║├> ${prefix}bloquear @membro
+║├────> autobloq
+║├─────────────────────
+║├> ${prefix}desbloquear
+║├────> autodesbloq
+║├─────────────────────
+║├> ${prefix}kitar
+║├────> bot sai fo grupo
 ║├─────────────────────
 ║├> ${prefix}bc
-║├────> sla
+║├────> [?]
 ║├─────────────────────
-║├> ${prefix}leave
-║├────> sla
+║├> ${prefix}clonar
+║├> ${prefix}clone
+║├────> clonar tag
 ║├─────────────────────
-║├> ${prefix}setpp
-║├────> sla
+║├>  ՏႮᏢϴᎡͲᎬ
 ║├─────────────────────
+║├> ${prefix}bug
+║├> ${prefix}reportar
+║├> ${prefix}reportarbug
+║├────> reportar bug ao criador
+║├─────────────────────
+║├> ${prefix}sigla nova sigla
 ║├> ${prefix}setprefix
-║├────> mudar sigla
+║├────> troca sigla de comandos
 ║└─────────────────────
-╚═══════════════════════
-ՏᎡ.ᏦᎬᏦᎬ ͲᎻᎬ ᏴᎬՏͲ❦ᵃᵗᵉⁿᵃ© 2021
+╚══════════════════════
+┌─────────❶.❷────────┐
+      ՏᎡ.ᏦᎬᏦᎬ ͲᎻᎬ ᏴᎬՏͲ❦ᵃᵗᵉⁿᵃ™   
+└─────────❶.❷────────┘
 
 `
 }
