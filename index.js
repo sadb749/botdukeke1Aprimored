@@ -488,7 +488,7 @@ case 'lofi':
 					}
 					break
 				case 'clearall':
-				cass 'limpar':
+				case 'limpar':
 					if (!isOwner) return reply(' quem e tu?')
 					anu = await client.chats.all()
 					client.setMaxListeners(25)
